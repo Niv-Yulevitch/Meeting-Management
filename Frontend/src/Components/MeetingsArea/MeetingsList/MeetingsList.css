@@ -1,0 +1,22 @@
+.MeetingsList > table {
+	margin: 50px auto;
+    
+}
+
+.MeetingsList table, .MeetingsList th, .MeetingsList td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.MeetingsList tr:nth-child(even) {
+    background-color: lightblue
+}
+
+.MeetingsList tr:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+.MeetingsList thead tr:first-child{
+    background-color: grey;
+}

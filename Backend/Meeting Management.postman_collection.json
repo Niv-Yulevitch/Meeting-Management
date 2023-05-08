@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "769044e2-99ea-4a11-a32b-888310c3a2d7",
+		"name": "Meeting Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22434110"
+	},
+	"item": [
+		{
+			"name": "GET all groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all meetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/meetings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"meetings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST add new meeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"groupId\": 1,\n    \"fromDate\":\"2022-11-10 08:30:00.000\",\n    \"toDate\":\"2022-11-10 12:00:00.000\",\n    \"details\": \"How to add more colors to the app\",\n    \"roomName\": \"The Purple Room\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/meetings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"meetings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
